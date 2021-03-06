@@ -26,8 +26,8 @@
     
     <script src="/libs/jquery/jquery.min.js"></script>
     
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/kuroneko_blog/atom.xml" title="KuroNekoNeko's World" type="application/atom+xml">
-<link rel="stylesheet" href="/kuroneko_blog/css/prism-tomorrow.css" type="text/css"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="KuroNekoNeko's World" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 <body>
@@ -35,7 +35,7 @@
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper head-container">
             <div class="brand-logo">
-                <a href="/kuroneko_blog/" class="waves-effect waves-light">
+                <a href="/" class="waves-effect waves-light">
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
@@ -308,7 +308,7 @@
             if (pwd && pwd.length > 0) {
                 if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                     alert('密码错误，将返回主页！');
-                    location.href = '/kuroneko_blog/';
+                    location.href = '/';
                 }
             }
         })();
@@ -439,7 +439,7 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/kuroneko_blog/tags/scrapy/">
+                            <a href="/tags/scrapy/">
                                 <span class="chip bg-color">scrapy</span>
                             </a>
                         
@@ -492,7 +492,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>完整代码见链接：<a href="https://github.com/kuronekonano/python_scrapy_movie" target="_blank" rel="noopener">https://github.com/kuronekonano/python_scrapy_movie</a><br>实现时使用<strong>图形界面、多线程、文件操作、数据库编程、网络编程、统计绘图</strong>六项技术。<br><strong>1. 数据采集</strong><br>（1）用wxPython实现GUI界面，包括<strong>登录界面</strong>、<strong>爬虫界面</strong>。爬虫界面上包含：<br>1）<strong>复选框</strong>：选择网站页面上要爬取的元素,包括电影名、评论、导演、主演、论坛讨论、电影别名；<br>2）<strong>下拉列表</strong>：选择开启几个多线程进行爬虫，选择爬取电影类型，排序方式<br>3）<strong>scrolledtext</strong>：爬虫结果汇总，包括运行时间，爬取结果，运行状态，爬取数量 等数据；<br>（2）以豆瓣电影为主页面爬取数据深入页面三个层次。并采取多线程方式实现爬虫。<br><strong>第一层次</strong>：电影分类列表，包括标签热门、最新、经典、可播放、豆瓣高分、冷门佳片、华语、欧美、韩国、日本、动作、喜剧、爱情、科幻、悬疑、恐怖、动画，并有三个可选择电影排列顺序：评价、最新、时间<br><strong>第二层次</strong>：电影的详细信息，包括上映年份、片名、导演、编剧、主演、类型、制片国家地区、语言、上映日期、片长、别名、IMDB编号、评分、评价人数、页面网址<br><strong>第三层次</strong>：包括该电影的短评、论坛讨论标题、爬取电影主演个人信息，包括姓名、性别、星座、出生日期、出生地、职业、简介信息<br>（3）将爬取的数据<strong>存储至数据库</strong>中。并将<strong>爬虫日志</strong>（本次数据采集起止时间、采用的线程数、爬取多少条数据，总共用时多长时间等）写到文件中。</p>
+                <p>完整代码见链接：<a target="_blank" rel="noopener" href="https://github.com/kuronekonano/python_scrapy_movie">https://github.com/kuronekonano/python_scrapy_movie</a><br>实现时使用<strong>图形界面、多线程、文件操作、数据库编程、网络编程、统计绘图</strong>六项技术。<br><strong>1. 数据采集</strong><br>（1）用wxPython实现GUI界面，包括<strong>登录界面</strong>、<strong>爬虫界面</strong>。爬虫界面上包含：<br>1）<strong>复选框</strong>：选择网站页面上要爬取的元素,包括电影名、评论、导演、主演、论坛讨论、电影别名；<br>2）<strong>下拉列表</strong>：选择开启几个多线程进行爬虫，选择爬取电影类型，排序方式<br>3）<strong>scrolledtext</strong>：爬虫结果汇总，包括运行时间，爬取结果，运行状态，爬取数量 等数据；<br>（2）以豆瓣电影为主页面爬取数据深入页面三个层次。并采取多线程方式实现爬虫。<br><strong>第一层次</strong>：电影分类列表，包括标签热门、最新、经典、可播放、豆瓣高分、冷门佳片、华语、欧美、韩国、日本、动作、喜剧、爱情、科幻、悬疑、恐怖、动画，并有三个可选择电影排列顺序：评价、最新、时间<br><strong>第二层次</strong>：电影的详细信息，包括上映年份、片名、导演、编剧、主演、类型、制片国家地区、语言、上映日期、片长、别名、IMDB编号、评分、评价人数、页面网址<br><strong>第三层次</strong>：包括该电影的短评、论坛讨论标题、爬取电影主演个人信息，包括姓名、性别、星座、出生日期、出生地、职业、简介信息<br>（3）将爬取的数据<strong>存储至数据库</strong>中。并将<strong>爬虫日志</strong>（本次数据采集起止时间、采用的线程数、爬取多少条数据，总共用时多长时间等）写到文件中。</p>
 <p><strong>2. 数据分析</strong><br>数据统计分析：<br>分析爬取的数据中悬疑类、剧情类、恐怖类的电影所占比例是多少，并用<strong>直方图、饼图</strong>展示结果。<br>对爬取过程中产生的数据进行分析：<br>同样为3线程数条件下，爬取数据条数与所用时长间的<strong>散点关系图</strong>；爬取数据条数同样为40条时，使用线程数与所用时长间的关系图；得出结论，线程数一定时，时间与数量成正比，数量一定时，线程数和时间成反比。</p>
 <p>这个程序是我们期末Python大作业的要求。</p>
 <p>其实很大程度上的要求是一学期以来做的各种作业，相当于把一学期的作业整合起来做个大的东西。</p>
@@ -1695,7 +1695,7 @@ if __name__=='__main__':
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://kuronekonano.github.io" rel="external nofollow noreferrer">KuroNeko Nano</a>
+                    <a href="http://kuronekonano.github.io/kuroneko_blog" rel="external nofollow noreferrer">KuroNeko Nano</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -1718,7 +1718,7 @@ if __name__=='__main__':
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="http://kuronekonano.github.io" target="_blank">KuroNeko Nano</a>
+                    <a href="http://kuronekonano.github.io/kuroneko_blog" target="_blank">KuroNeko Nano</a>
                     !
                 </span>
             </div>
@@ -1743,7 +1743,7 @@ if __name__=='__main__':
                     
                         <div class="article-tag">
                             
-                                <a href="/kuroneko_blog/tags/scrapy/">
+                                <a href="/tags/scrapy/">
                                     <span class="chip bg-color">scrapy</span>
                                 </a>
                             
@@ -1940,7 +1940,7 @@ if __name__=='__main__':
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/kuroneko_blog/2020/01/08/code-interview/">
+                <a href="/2020/01/08/code-interview/">
                     <div class="card-image">
                         
                         
@@ -1979,7 +1979,7 @@ if __name__=='__main__':
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/kuroneko_blog/2020/01/08/https-hyper-text-transfer-protocol-over-secure-socket-layer/">
+                <a href="/2020/01/08/https-hyper-text-transfer-protocol-over-secure-socket-layer/">
                     <div class="card-image">
                         
                         
@@ -2009,7 +2009,7 @@ if __name__=='__main__':
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/kuroneko_blog/tags/computer-network/">
+                    <a href="/tags/computer-network/">
                         <span class="chip bg-color">computer network</span>
                     </a>
                     
@@ -2194,7 +2194,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             <span id="year">2019</span>
-            <a href="http://kuronekonano.github.io" target="_blank">KuroNeko Nano</a>
+            <a href="http://kuronekonano.github.io/kuroneko_blog" target="_blank">KuroNeko Nano</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
@@ -2310,7 +2310,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
 
 
-    <a href="/kuroneko_blog/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
         <i class="fas fa-rss"></i>
     </a>
 
@@ -2355,7 +2355,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 <script src="/js/search.js"></script>
 <script type="text/javascript">
 $(function () {
-    searchFunc("/kuroneko_blog/" + "search.xml", 'searchInput', 'searchResult');
+    searchFunc("/" + "search.xml", 'searchInput', 'searchResult');
 });
 </script>
 <!-- 回到顶部按钮 -->
@@ -2428,6 +2428,6 @@ $(function () {
         }, 3e3))
     }) </script>
 
-<script src="/kuroneko_blog/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/kuroneko_blog/live2dw/assets/haru01.model.json"},"display":{"position":"left","width":200,"height":400,"mobile":{"show":true},"react":{"opacity":0.7}}});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/haru01.model.json"},"display":{"position":"left","width":200,"height":400,"mobile":{"show":true},"react":{"opacity":0.7}}});</script></body>
 
 </html>
